@@ -1,12 +1,25 @@
 const express = require('express');
+const crypto = require('crypto'); // para gerar id aleatório
+const connection = require('./database/connection'); //impota conexão com banco de dados
 
 const routes = express.Router();
 
-routes.get('/users', (request, response) => {
-  return response.json({
-    evento: 'Semana Oministack 11',
-    aluno: 'MrVIDAL'
-  });
+routes.post('/ongs', async (request, response) => {
+  const { name, email, whatsapp, city, uf } = request.body;
+  /** Cria id aleatório de 4 bytes converte em string no formato hexadecimal */
+  const id = crypto.randomBytes(4).toString('HEX');
+  
+  /** Insere dados na tabela do banco */
+  await connection('ongs').insert({
+    id,
+    name,
+    email,
+    whatsapp,
+    city,
+    uf
+  })
+
+  return response.json({ id });
 });
 
 module.exports = routes; //exporta as rotas para toda aplicação
