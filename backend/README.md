@@ -1,6 +1,6 @@
 # Be The Hero
 
-Projeto desenvolvido na semana omnistack 11 da RocketSeat.
+Projeto da Semana Oministack 11 da Rocketseat. Website e App de cadastro de ONGs e casos que elas precisam de ajuda.
 
 ### Tecnologias utilizadas
 
