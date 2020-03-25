@@ -12,6 +12,8 @@ routes.post('/ongs', OngController.create);
 routes.post('/incidents', IncidentController.create);
 /** Rota para listar incidents cadastradas */
 routes.get('/incidents', IncidentController.index);
+/** Rota para excluir incidents cadastradas */
+routes.delete('/incidents/:id', IncidentController.delete);
 
 module.exports = routes; //exporta as rotas para toda aplicação
 

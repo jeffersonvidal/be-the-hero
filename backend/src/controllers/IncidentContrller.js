@@ -21,5 +21,27 @@ module.exports = {
     });
 
     return response.json({ id }); //retorna o id do registro cadastrado
+  },
+
+  /** Deleta incident da tabela */
+  async delete(request, response) {
+    const { id } = request.params; //id do registro passado por parâmetro
+    const ong_id = request.headers.authorization; //id da ong que está deletando o registro
+
+    /** Seleciona incident criado pela ong para ser deletado */
+    const incident = await connection('incidents')
+      .where('id', id)
+      .select('ong_id')
+      .first();
+    /** Se a ong que deseja deletar o registro não for a que criou e está logada retorna status http 401 (não autorizado) */
+    if (incident.ong_id !== ong_id) {
+      return response.status(401).json({ error: 'Operation not permitted.' });
+    }
+
+    /** Se estiver tudo certo, deleta o registro da tabela */
+    await connection('incidents').where('id', id).delete();
+
+    /** 204 = responsta que deu sucesso mas não tem conteúdo para ser exibido */
+    return response.status(204).send();
   }
 };
