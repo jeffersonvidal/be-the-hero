@@ -1,6 +1,7 @@
 const express = require('express');
 const OngController = require('./controllers/OngController'); // Importando controller Ongs
 const IncidentController = require('./controllers/IncidentContrller'); // Importando controller Incidents
+const ProfileController = require('./controllers/ProfileController'); // Importando controller Profile
 
 const routes = express.Router();
 
@@ -15,5 +16,7 @@ routes.get('/incidents', IncidentController.index);
 /** Rota para excluir incidents cadastradas */
 routes.delete('/incidents/:id', IncidentController.delete);
 
+/** Rota para listar incidents específicos de uma ong */
+routes.get('/profile', ProfileController.index);
 module.exports = routes; //exporta as rotas para toda aplicação
 
