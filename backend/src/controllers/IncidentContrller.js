@@ -3,7 +3,20 @@ const connection = require('../database/connection'); //impota conexão com banc
 module.exports = {
   /** Lista incidents cadastrados */
   async index(request, response) {
-    const incidents = await connection('incidents').select('*');
+    /** busca parametro page, se não existir define ele como 1 que será a página 1 para realizar a paginação de resultados */
+    const { page = 1 } = request.query;
+
+    /** Conta todos os casos no bando de dados */
+    const [count] = await connection('incidents').count();
+
+    const incidents = await connection('incidents')
+    .limit(5) //limite de registros por página
+    .offset((page - 1) * 5) //quantos registros ele vai pular para exibir na próxima página
+    .select('*'); //pega todos os registros
+
+    /** Cria cabeçalho com o total de registros no banco */
+    response.header('X-Total-Count', count['count(*)']);
+
     return response.json(incidents);
   },
 
