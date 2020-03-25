@@ -10,9 +10,17 @@ module.exports = {
     const [count] = await connection('incidents').count();
 
     const incidents = await connection('incidents')
-    .limit(5) //limite de registros por página
-    .offset((page - 1) * 5) //quantos registros ele vai pular para exibir na próxima página
-    .select('*'); //pega todos os registros
+      /** Pega os dados da ong da tabela ongs */
+      .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
+      .limit(5) //limite de registros por página
+      .offset((page - 1) * 5) //quantos registros ele vai pular para exibir na próxima página
+      .select(['incidents.*',
+        'ongs.name',
+        'ongs.email',
+        'ongs.whatsapp',
+        'ongs.city',
+        'ongs.uf'
+      ]); //pega todos os registros de incidents e campos específicos da tabela ongs
 
     /** Cria cabeçalho com o total de registros no banco */
     response.header('X-Total-Count', count['count(*)']);
