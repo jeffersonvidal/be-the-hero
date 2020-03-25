@@ -2,8 +2,12 @@ const express = require('express');
 const OngController = require('./controllers/OngController'); // Importando controller Ongs
 const IncidentController = require('./controllers/IncidentContrller'); // Importando controller Incidents
 const ProfileController = require('./controllers/ProfileController'); // Importando controller Profile
+const SessionController = require('./controllers/SessionController'); // Importando controller Sessão / login
 
 const routes = express.Router();
+
+/** Rota de login/sessão */
+routes.post('/sessions', SessionController.create);
 
 /** Rota para listar ongs cadastradas */
 routes.get('/ongs', OngController.index);
