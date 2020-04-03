@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="./screenshots/logo.svg"  width="500px"/>
+    <img alt="Be The Hero" src="./screenshots/logo.svg"  width="400px"/>
 </h1>
 
 <h3 align="center" >
@@ -44,9 +44,9 @@
 </p>
 
 <p align="center">
-  <a href="#Estrutura">Estrutura do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Sites">Bibliotecas Usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Características">Características do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Estrutura do Projeto">Estrutura do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Bibliotecas Usadas">Bibliotecas Usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Características do Projeto">Características do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#License">License</a>
 </p>
