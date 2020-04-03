@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="https://github.com/jeffersonvidal/be-the-hero/blob/master/screenshots/logo.svg?raw=true"  width="500px"/>
+    <img alt="Be The Hero" src="./screenshots/logo.svg"  width="500px"/>
 </h1>
 
 <h3 align="center" >
@@ -47,17 +47,17 @@
   <a href="#estrutura">Estrutura do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#libs">Bibliotecas Usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#caracteristicas">Características do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#books-technologies">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
+  <a href="#technologies">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">License</a>
 </p>
 
-## :estrutura: Estrutura do Projeto
+## Estrutura do Projeto
 
 - [x] Backend - API Rest com sqlite3;
 - [] Frontend - Aplicação versão web com React JS;
 - [] Mobile - Aplicação versão mobile com React Native;
 
-## :libs: Sites, softwares, bibliotecas, apis utilizadas
+## Sites, softwares, bibliotecas, apis utilizadas
 
 * NodeJS - https://nodejs.org/dist/v12.16.1/node-v12.16.1-x64.msi;
 * Express - Microframework que trata as requisições e rotas - "npm install express";
@@ -65,7 +65,7 @@
 * Cors - Determina quem pode acessar a aplicação;
 * Insomnia - https://insomnia.rest/download/ - Testar métodos e rotas;
 
-## :caracteristicas: Características do projeto
+## Características do projeto
 
 **Trabalha com MVC**
 * MVC = Models, Views e Controllers
@@ -73,13 +73,13 @@
     - Views = parte de visualização (o que o usuário visualiza)
     - Controllers = regras de negócios, quem recebe e trata as requisições
 
-## :books: Screenshots
+## Screenshots
 
 
-## :memo: License
+## License
 
 This project is under MIT. See at here [LICENSE](/LICENSE) for more informations.
 
 ---
 
-Made by :blue_heart: [Jefferson Vidal](https://github.com/jeffersonvidal)
+Made by :red_heart: [Jefferson Vidal](https://github.com/jeffersonvidal)
