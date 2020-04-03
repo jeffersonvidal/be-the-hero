@@ -1,32 +1,85 @@
-# Be The Hero
+<h1 align="center">
+    <img alt="Be The Hero" src="https://github.com/jeffersonvidal/be-the-hero/blob/master/screenshots/logo.svg?raw=true"  width="500px"/>
+</h1>
 
-Projeto da Semana Oministack 11 da Rocketseat. Website e App de cadastro de ONGs e casos que elas precisam de ajuda.
+<h3 align="center" >
+  Be The Hero
+</h3>
 
-### Tecnologias utilizadas
+<p align="center">
+  Projeto da Semana Oministack 11 da Rocketseat. Website e App de cadastro de ONGs e casos que elas precisam de ajuda.
+</p>
 
-- [x] API Rest com sqlite3 (Backend);
-- [] React JS (Frontend) - Aplicação versão web;
-- [] React Native (Mobile) - Aplicação versão mobile;
 
-### Estrutura do projeto
+<p align="center">
+  <img alt="Languagues" src="https://img.shields.io/github/languages/count/jeffersonvidal/be-the-hero">
+  <img alt="Top Languague" src="https://img.shields.io/github/languages/top/jeffersonvidal/be-the-hero">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/jeffersonvidal/be-the-hero">
+  <a href="https://github.com/jeffersonvidal/foodfy/commits/master">
+    <img alt="Last commit date" src="https://img.shields.io/github/last-commit/jeffersonvidal/be-the-hero">
+  </a>
+  <a href="https://github.com/jeffersonvidal/be-the-hero" target="_blank">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/jeffersonvidal/be-the-hero">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/jeffersonvidal/be-the-hero/issues" target="_blank">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/jeffersonvidal/be-the-hero"></a>
+  <a href="https://github.com/jeffersonvidal/be-the-hero/network" target="_blank">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/jeffersonvidal/be-the-hero">
+  </a>
+  <a href="https://github.com/jeffersonvidal/be-the-hero/stargazers" target="_blank">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/jeffersonvidal/be-the-hero">
+  </a>
+  <a href="https://github.com/jeffersonvidal" target="_blank">
+    <img alt="Made by Jefferson Vidal" src="https://img.shields.io/badge/made%20by-jeffersonvidal-informational">
+  </a>
+  <a href="https://www.linkedin.com/in/jeffersonvidal/" target="_blank" >
+    <img alt="Linkedin - Jefferson Vidal" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
+  </a>
+  <a href="https://api.whatsapp.com/send?phone=5538988294043"
+        target="_blank" >
+    <img alt="Fale comigo no whatsapp - Jefferson Vidal" src="https://img.shields.io/badge/Whatsapp--%23F8952D?style=social&logo=whatsapp">
+  </a>
+</p>
 
-- [] API Rest para abstração do banco de dados sqlite3;
-- [] Versão web com React JS;
-- [] Versão Mobile com React Native;
+<p align="center">
+  <a href="#estrutura">Estrutura do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#libs">Bibliotecas Usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#caracteristicas">Características do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-technologies">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-### Sites, softwares, bibliotecas, apis utilizadas
+## :estrutura: Estrutura do Projeto
+
+- [x] Backend - API Rest com sqlite3;
+- [] Frontend - Aplicação versão web com React JS;
+- [] Mobile - Aplicação versão mobile com React Native;
+
+## :libs: Sites, softwares, bibliotecas, apis utilizadas
 
 * NodeJS - https://nodejs.org/dist/v12.16.1/node-v12.16.1-x64.msi;
-* Express - Microframework que trata as requisições e rotas - "yarn add express";
+* Express - Microframework que trata as requisições e rotas - "npm install express";
 * KnexJS - Trabalhar query de banco de dados - http://knexjs.org/;
 * Cors - Determina quem pode acessar a aplicação;
 * Insomnia - https://insomnia.rest/download/ - Testar métodos e rotas;
-* Heroku - https://www.heroku.com/ - Hospedagem do backend do projeto;
 
-### Características do projeto
+## :caracteristicas: Características do projeto
 
 **Trabalha com MVC**
 * MVC = Models, Views e Controllers
     - Models = abstração (representação) das tabelas do banco de dados
     - Views = parte de visualização (o que o usuário visualiza)
     - Controllers = regras de negócios, quem recebe e trata as requisições
+
+## :books: Screenshots
+
+
+## :memo: License
+
+This project is under MIT. See at here [LICENSE](/LICENSE) for more informations.
+
+---
+
+Made by :blue_heart: [Jefferson Vidal](https://github.com/jeffersonvidal)
