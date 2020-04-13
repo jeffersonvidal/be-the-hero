@@ -1,12 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
+import api from '../../services/api'; //conexão com api (backend)
 import './styles.css';
 
 import logoImg from '../../assets/logo.svg';
 
 export default function NewIncident() {
+  /** Pega dados dos campos do form */
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [value, setValue] = useState('');
+
+  /** Pega ID da ong logada */
+  const ongId = localStorage.getItem('ongId');
+
+  /** Usado para enviar usuário para rota profile */
+  const history = useHistory();
+
+  /** Cadastra novo caso */
+  async function handleNewIncident(e){
+    e.preventDefault();
+    
+    const data = {
+      title,
+      description,
+      value,
+    }
+
+    try {
+      await api.post('incidents', data, {
+        headers: {
+          Authorization: ongId,
+        }
+      })
+      /** Redireciona para rota profile */
+      history.push('/profile');
+    } catch (err) {
+      alert('Erro ao cadastrar caso. Tente novamente.');
+    }
+  }
+
+  /** Renderiza HTML */
   return (
     <div className="new-incident-container">
       <div className="content">
@@ -21,10 +57,22 @@ export default function NewIncident() {
           </Link>
         </section>
 
-        <form>
-          <input placeholder="Título do caso" />
-          <textarea type="email" placeholder="Descrição" />
-          <input placeholder="Valor em Reais" />
+        <form onSubmit={handleNewIncident}>
+          <input
+            placeholder="Título do caso"
+            value={title}
+            onChange={e => setTitle(e.target.value)}
+          />
+          <textarea type="email"
+            placeholder="Descrição"
+            value={description}
+            onChange={e => setDescription(e.target.value)}
+          />
+          <input
+            placeholder="Valor em Reais"
+            value={value}
+            onChange={e => setValue(e.target.value)}
+          />
           <button className="button" type="submit">Cadastrar</button>
         </form>
       </div>
