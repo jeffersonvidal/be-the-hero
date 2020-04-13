@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Be The Hero" src="./screenshots/logo.svg"  width="400px"/>
+    <img alt="Be The Hero" src="./screenshots/bethehero.png"  width="400px"/>
 </h1>
 
 <h3 align="center" >
@@ -87,4 +87,4 @@ This project is under MIT. See at here [LICENSE](/LICENSE) for more informations
 
 ---
 
-Made by :red_heart: [Jefferson Vidal](https://github.com/jeffersonvidal)
+Made with :red_heart: by [Jefferson Vidal](https://github.com/jeffersonvidal)
