@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FiPower, FiTrash2 } from 'react-icons/fi';
 
 import api from '../../services/api'; //conexão com api (backend)
@@ -14,6 +14,9 @@ export default function Profile() {
   /** Pega os dados da ONG logada */
   const ongId = localStorage.getItem('ongId');
   const ongName = localStorage.getItem('ongName');
+
+  /** Usado para enviar usuário para home após logout */
+  const history = useHistory();
 
   /** useEffect -  */
   useEffect(() => {
@@ -42,6 +45,13 @@ export default function Profile() {
     }
   }
 
+  /** Faz logout do sistema */
+  function handleLogout(){
+    /** Remove os dados do localStorage */
+    localStorage.clear();
+    history.push('/');
+  }
+
   /** Renderiza HTML */
   return (
     <div className="profile-container">
@@ -50,7 +60,7 @@ export default function Profile() {
         <span>Bem vindo(a), {ongName}</span>
 
         <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
-        <button type="button">
+        <button onClick={handleLogout} type="button">
           <FiPower size={18} color="#e02041" />
         </button>
       </header>
