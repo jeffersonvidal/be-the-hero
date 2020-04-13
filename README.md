@@ -56,7 +56,7 @@
 ## Estrutura do Projeto
 
 - [x] Backend - API Rest com sqlite3;
-- [] Frontend - Aplicação versão web com React JS;
+- [x] Frontend - Aplicação versão web com React JS;
 - [] Mobile - Aplicação versão mobile com React Native;
 
 <a id="Bibliotecas"></a>
