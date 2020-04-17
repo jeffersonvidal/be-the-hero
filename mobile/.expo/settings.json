@@ -1,8 +1,8 @@
 {
+  "urlRandomness": "fq-jgu",
   "hostType": "lan",
   "lanType": "ip",
   "dev": true,
   "minify": false,
-  "urlRandomness": "ti-vxr",
   "https": false
 }
