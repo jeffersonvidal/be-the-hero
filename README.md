@@ -57,7 +57,7 @@
 
 - [x] Backend - API Rest com sqlite3;
 - [x] Frontend - Aplicação versão web com React JS;
-- [] Mobile - Aplicação versão mobile com React Native;
+- [X] Mobile - Aplicação versão mobile com React Native;
 
 <a id="Bibliotecas"></a>
 ## Sites, softwares, bibliotecas, apis utilizadas
