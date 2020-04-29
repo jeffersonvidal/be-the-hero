@@ -87,4 +87,4 @@ This project is under MIT. See at here [LICENSE](/LICENSE) for more informations
 
 ---
 
-Made with :red_heart: by [Jefferson Vidal](https://github.com/jeffersonvidal)
+Made with ♥ by [Jefferson Vidal](https://github.com/jeffersonvidal)
